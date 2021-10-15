@@ -1,0 +1,22 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: rgba(172, 172, 172, 0.726);
+}
+#green{
+  text-decoration: none;
+  color: rgb(101, 255, 87);
+}
+#green:hover{
+  text-decoration: underline;
+  text-decoration-color: greenyellow;
+}
+#yellow{
+  text-decoration: none;
+  color: yellow;
+}
+#yellow:hover{
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}

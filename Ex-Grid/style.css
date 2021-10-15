@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+  margin-top: 10px;
+}
+main{
+  
+  display: grid;
+ grid-template-columns: 300px 300px ; 
+ grid-template-rows: 100px 100px 100px 100px;
+ grid-template-areas: "one two"
+                       "one tre"
+                       "for tre"
+                       "fiv fiv";
+ 
+ row-gap: 10px;
+column-gap: 10px;
+position: relative;
+left: 50%;
+margin-left: -305px;
+width: 100px;
+}
+section{
+  border-radius: 20px;
+}
+section:hover{
+  cursor: pointer;
+}
+#one{
+  background-color: red;
+  grid-area: one;
+}
+#two{
+  background-color: greenyellow;
+  grid-area: two;
+}
+#tre{
+  background-color: yellow;
+  grid-area: tre;
+}
+#for{
+  background-color: blue;
+  grid-area: for;
+}
+#fiv{
+  background-color: cornflowerblue;
+  grid-area: fiv;
+  
+}
+#meio{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+ margin: 0;
+ padding: 0;
+ margin-top: 20px;
+ margin-bottom: 15px;
+}
+#wrap{
+  display: flex;
+   flex-wrap: wrap;
+   
+}
+#um{
+  background-color: crimson;
+  width: 100px;
+  height: 40px;
+  
+  margin-bottom: 10px;
+ 
+}
+#do{
+  background-color: cyan;
+  width: 100px;
+  height: 40px;
+  
+   margin-bottom: 10px;
+}
+#fe{
+  background-color: salmon;
+  width: 100px;
+  height: 40px;
+   
+}
+div{
+  flex: 0 1 400px;
+  margin: 0 auto;
+}
+div:hover{
+  cursor: pointer;
+}
