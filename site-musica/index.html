@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <title>PodCast</title>
+</head>
+<body>
+    
+    <main>
+        <section id="wrap">
+            <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <p id="titu">Seu PodCast</p>
+            <p id="what">Podcast é um conteúdo em áudio, disponibilizado através de um arquivo ou streaming, que conta com a vantagem de ser escutado sob demanda, quando o usuário desejar.</p>
+            <input type="button" value="Criar uma Conta" id="botao" onclick="criar()"  >
+            <input type="button" value="Entrar" class="log" onclick="enter()">
+            <img src="https://cdn.dooca.store/49/files/bandeira-de-cartoes-1.png?v=1571856474" id="formas" alt="">
+        </section>
+        <section id="login">
+            <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <article class="info">
+                <p class="para">Nome:</p>
+                <input type="text" name="nome" id="nome" class="loca" placeholder="Seu nome">
+                <p class="para">Email:</p>
+                <input type="email" name="mail" id="mail" class="loca" placeholder="Seu Email">
+                <p class="para">Senha:</p>
+                <input type="password" name="pass" id="pass" class="loca" placeholder="Sua senha">
+                <p class="para">Repita a senha:</p>
+                <input type="password" name="rpass" id="rpass" class="loca" placeholder="Repita a sua senha">
+                <p class="para" id="pp"></p>
+                <article>
+                    <input type="button" value="Cadastrar" id="cad" onclick="save()">
+                    <input type="button" value="Voltar" class="volt" onclick="exit()">
+                </article>
+            </article>
+        </section>
+        <section id="open">
+            <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <article class="info" id="cc1">
+                <p class="para">Email:</p>
+                <input type="email" name="mail" id="may" class="loca" placeholder="Seu Email">
+                <p class="para">Senha:</p>
+                <input type="password" name="pass" id="sen" class="loca" placeholder="Sua senha">
+           
+                <article>
+                        <input type="button" value="Entrar" class="log" id="l2" onclick="eu()">
+                        <input type="button" value="Voltar" class="volt" onclick="exit()">
+                </article>
+            </article>
+            
+        </section>
+      
+    </main> 
+    <script src="script.js"></script>
+</body>
+</html>

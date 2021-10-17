@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@400;500;600;700&display=swap');
+
+body{
+  background-color:  #d3a4e9bd;
+  
+}
+#notifi{
+    width: 170px;
+    height: 70px;
+    background-color: rgb(50, 163, 78);
+    position: absolute;
+    left:0;
+    border-radius: 0 30px 30px 0px;
+    display: none;
+}
+#wrap{
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -175px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px #0000001f;
+   
+}
+.img1{
+    width: 350px;
+    
+    border-radius: 20px 20px 0 0;
+}
+#titu{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.3em;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    position: relative;
+    top: -55px;
+    color: rgb(255, 255, 255);
+}
+#what{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #521780;
+    width: 300px;
+    margin-left: 25px;
+    font-weight: 700;
+    position: relative;
+    top: -65px;
+}
+#botao{
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: #1f1a34;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 12px;
+    position: relative;
+    top: -70px;
+    margin-left: 107px;
+    box-shadow: 0px 0px 4px 0px #0000001f;
+}
+#botao:hover{
+    cursor: pointer;
+    
+    background-color: #1f1a34d2;
+}
+
+#formas{
+    width: 220px;
+    position: relative;
+   top:-50px;
+    margin-left: 63px;
+}
+.log{
+    padding: 12px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: 
+    #34b373;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 12px;
+    position: relative;
+    top: -55px;
+    margin-left: 140px;
+     box-shadow: 0px 0px 4px 0px #0000001f;
+}
+
+.log:hover{
+    cursor: pointer;
+    
+    background-color:  #3dcc85e5;;
+}
+#l2{
+    top: 0px;
+    margin-left: 0px;
+}
+
+#login{
+    width: 350px;
+    height: 500px;
+    background-color: rgba(178, 119, 255, 0.596);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -175px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px #0000001f;
+    display: none;
+    
+}
+.para{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #6a289cc5;
+    font-weight: 700;
+   
+}
+#pp{
+    font-size: 0.8em;
+    color: #d61e1eb7;
+    
+}
+.loca{
+    border: 1px solid rgb(139, 15, 255);
+    border-radius: 5px;
+    padding: 5px 3px;
+    font-family: 'Quicksand', sans-serif;
+    color: #521780;
+}
+.loca:focus{
+outline: 1px solid  #521780;
+}
+.info{
+    margin-left: 100px;
+}
+#cad{
+    display: inline-block;
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: #1f1a34;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 12px;
+  
+    box-shadow: 0px 0px 4px 0px #0000001f;
+}
+#cad:hover{
+    cursor: pointer;
+    
+    background-color: #1f1a34d2;
+}
+.volt{
+    display: inline-block;
+    padding: 12px;
+    border: none;
+    color: white;
+    background-color: #e45441d2;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 12px;
+  
+    box-shadow: 0px 0px 4px 0px #0000001f;  
+    margin-top: 10px;
+}
+.volt:hover{
+    cursor: pointer;
+    
+    background-color: #e4544196;
+}
+#open{
+    width: 350px;
+    height: 500px;
+    background-color: rgba(178, 119, 255, 0.596);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -175px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px #0000001f;
+    display: none;
+    
+}
+#cc1{
+    margin-top: 40px;
+}
