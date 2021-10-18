@@ -9,7 +9,7 @@
     <title>PodCast</title>
 </head>
 <body>
-    
+   
     <main>
         <section id="wrap">
             <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
@@ -23,7 +23,7 @@
             <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
             <article class="info">
                 <p class="para">Nome:</p>
-                <input type="text" name="nome" id="nome" class="loca" placeholder="Seu nome">
+                <input type="" name="nome" id="nome" class="loca" placeholder="Seu nome">
                 <p class="para">Email:</p>
                 <input type="email" name="mail" id="mail" class="loca" placeholder="Seu Email">
                 <p class="para">Senha:</p>
@@ -41,19 +41,19 @@
             <img class="img1" src="https://images.pexels.com/photos/3916376/pexels-photo-3916376.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
             <article class="info" id="cc1">
                 <p class="para">Email:</p>
-                <input type="email" name="mail" id="may" class="loca" placeholder="Seu Email">
+                <input type="email" name="email" id="may" class="loca" placeholder="Seu Email">
                 <p class="para">Senha:</p>
-                <input type="password" name="pass" id="sen" class="loca" placeholder="Sua senha">
-           
+                <input type="password" name="senha" id="sen" class="loca" placeholder="Sua senha">
+                <p class="para" id="checkb"></p>
                 <article>
-                        <input type="button" value="Entrar" class="log" id="l2" onclick="eu()">
+                        <input type="button" value="Entrar" class="log" id="l2" onclick="eu(n.value)" >
                         <input type="button" value="Voltar" class="volt" onclick="exit()">
                 </article>
             </article>
-            
         </section>
+        <script src="script.js"></script>
       
     </main> 
-    <script src="script.js"></script>
+   
 </body>
 </html>

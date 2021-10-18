@@ -1,0 +1,151 @@
+body{
+    background-color: rgba(130, 99, 201, 0.849);
+}
+#data{
+      font-family: 'Bebas Neue', cursive;
+ 
+    color: rgb(39, 39, 39);
+    font-size: 1.4em;
+    position: relative;
+    top: -155px;
+    margin-left: 5px;
+}
+#hora{
+    font-family: 'Bebas Neue', cursive;
+  
+    color: rgb(39, 39, 39);
+    font-size: 1.4em;
+    position: relative;
+    top: -185px;
+    margin-left: 5px;
+}
+#meio{
+    width: 400px;
+    height: 600px;
+    background-color: #f1f3f4;
+    border-radius:15px ;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -200px;
+
+}
+#music{
+    position: relative;
+    top: -40px;
+
+    width: 400px;
+}
+#nmsc{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.8em;
+    width: 400px;
+    position: relative;
+    top: -20px;
+   
+}
+#imag{
+    width: 400px;
+   border-radius:15px 15px 0 0 ;
+}
+#core{
+    width: 30px;
+    margin-left: 10px;
+    position: relative;
+    top: -50px;
+    
+}
+#tama{
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    top: -95px;
+    margin-left: 50px;
+    font-weight: 600;
+}
+#core:hover, #enviar:hover{
+    cursor: pointer;
+}
+#girl{
+ width: 40px;
+ border-radius: 40px;
+ margin-left: 0;
+ border: 2px solid black;
+ position: absolute;
+    top: 350px;
+    margin-left:10px;
+
+}
+#boy{
+ width: 40px;
+ border-radius: 40px;
+ margin-left: 0;
+ border: 2px solid black;
+ position: absolute;
+    top: 410px;
+    margin-left:12px;
+   display: none;
+}
+#boy2{
+ width: 40px;
+ border-radius: 40px;
+ margin-left: 0;
+ border: 2px solid black;
+ position: absolute;
+    top: 470px;
+    margin-left:12px;
+    display: none;
+}
+#gg1{
+   
+    position: absolute;
+    top: 340px;  
+ width: 340px;
+ margin-left:60px;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 0.9em;
+}
+#gg2{
+   
+    position: absolute;
+    top: 400px;  
+ width: 340px;
+ margin-left:60px;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 0.9em;
+  display: none;
+}
+#gg3{
+   
+    position: absolute;
+    top: 460px;  
+ width: 340px;
+ margin-left:60px;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 0.9em;
+ display: none;
+}
+#text{
+border: 0;
+padding: 8px 4px;
+width: 340px;
+border-radius: 10px;
+background-color: #f1f3f4;
+position: absolute;
+bottom:  10px; 
+margin-left: 10px;
+
+}
+#text:focus{
+    outline: 0;
+}
+#p1,#p2,#p3{
+    display: inline;
+}
+#enviar{
+    width: 25px;
+    position: absolute;
+bottom:  13px; 
+left: 365px;
+}
+
+

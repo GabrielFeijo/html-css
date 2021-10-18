@@ -18,11 +18,13 @@ function exit(){
     all.style.display = 'block'
     two.style.display = 'none'
     ope.style.display = 'none'
+    form.innerHTML = ''
 }
 function enter(){
     all.style.display = 'none'
     two.style.display = 'none'
     ope.style.display = 'block'
+    form.innerHTML = ''
 }
 
 let n = document.getElementById('nome')
@@ -43,8 +45,9 @@ function save(){
         window.alert('Faltam Dados')
     }
 }
+
 function test(){
-    let pe = document.getElementById('pp')
+ let pe = document.getElementById('pp')
     pe.innerHTML = ''
    
     if (p.value != rp.value){
@@ -58,12 +61,26 @@ function test(){
     
 
 }
-setInterval(test, 100)
+setInterval(test, 10)
 
 let mm = document.getElementById('may')
 let ss = document.getElementById('sen')
-function eu(){
-    if (e.value == mm.value && ss.value == p.value){
-        window.alert('aaa')
+let form = document.getElementById('checkb')
+
+
+function eu(valor){
+    if(e.value == mm.value && ss.value == p.value && mm.value.length > 0 && ss.value.length > 0 && n.value.length > 0 && login == true){
+
+        window.location = "page2/index.html?Nome="+valor;
+        form.innerHTML = ''
+     
+    }else{
+        
+        form.innerHTML = 'Login ou senha inválidos'
     }
 }
+
+
+
+
+
