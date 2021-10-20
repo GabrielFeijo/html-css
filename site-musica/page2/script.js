@@ -1,15 +1,16 @@
+let lnam = document.getElementById('lnome')
+
 function sair(){
+    lnam.innerHTML = 'Olá, ' + variavel
     if (variavel == undefined){
     window.location = "../index.html"
     }
 }
 
-let lnam = document.getElementById('lnome')
 
-function nome(){
- lnam.innerHTML = 'Olá, ' + variavel
-}
-setInterval(nome, 1)
+
+
+
 
 
 function queryString(parameter) {  
@@ -69,7 +70,7 @@ function rel(){
    let hh = document.getElementById('hora');
   hh.innerHTML = `Hora: ${hora}:${min}`
 }
-setInterval(rel,1000)
+setInterval(rel,1)
 document.getElementById("music").volume = 0.5;
 
 let cora = document.getElementById('core');
@@ -126,5 +127,24 @@ function envio(){
  }
  text.value = ''
 }
-
+document.onkeydown = teclado;
+function teclado(e){
+    if(e.keyCode == 13){
+        if(msg1 == false && text.value.length > 0){
+            b1.style.display = 'block'
+            l1.style.display = 'block'
+            l1.innerHTML = text.value
+            msg1 = true
+            text.value = ''
+        }else if(msg2 == false  && text.value.length > 0){
+           b2.style.display = 'block'
+           l2.style.display = 'block'
+           l2.innerHTML = text.value
+           msg1 = true
+           msg2 = true
+           text.value = ''
+        }
+        text.value = ''
+    }
+}
 

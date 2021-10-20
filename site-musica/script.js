@@ -61,7 +61,7 @@ function test(){
     
 
 }
-setInterval(test, 10)
+setInterval(test, 100)
 
 let mm = document.getElementById('may')
 let ss = document.getElementById('sen')
@@ -80,7 +80,26 @@ function eu(valor){
     }
 }
 
+document.onkeydown = teclado;
+function teclado(e){
+    if (e.keyCode == 13){
+        if(e.value == mm.value && ss.value == p.value && mm.value.length > 0 && ss.value.length > 0 && n.value.length > 0 && login == true){
 
+            window.location = "page2/index.html?Nome="+valor;
+            form.innerHTML = ''
+         
+        }else{
+            
+            form.innerHTML = 'Login ou senha inválidos'
+        }
+    }
+    if(e.keyCode == 27){
+        all.style.display = 'block'
+        two.style.display = 'none'
+        ope.style.display = 'none'
+        form.innerHTML = ''
+    }
+}
 
 
 
