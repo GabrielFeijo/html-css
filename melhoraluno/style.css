@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
+body{
+    background-image:linear-gradient(to bottom,  rgba(72, 70, 180, 0.89), rgba(72, 70, 180, 0.644) );
+    background-attachment: fixed;
+}
+
 input{
-   
     margin-top: 10px;
     outline: 0;
     border: 2px solid rgb(110, 77, 255);
     border-radius: 8px;
 }
 #wrap {
-    background-color: cornflowerblue;
+    background-color: rgb(136, 100, 237);
     width: 400px;
     height: 200px;
     border-radius: 20px;
@@ -17,9 +21,10 @@ input{
     left: 50%;
     margin-left: -200px;
     margin-top: -100px;
+    box-shadow: 0px 0px 2px 0px #00000040;
 }
 #s-two{
-    background-color: cornflowerblue;
+    background-color: rgb(136, 100, 237);
     width: 400px;
     border-radius: 20px;
     position: absolute;
@@ -28,6 +33,7 @@ input{
     margin-left: -200px;
     margin-top: -130px;
     display: none;
+    box-shadow: 0px 0px 1px 0px #0000002c;
 }
 p{
    margin:0;
