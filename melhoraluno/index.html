@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Alunos</title>
+</head>
+<body>
+    <main id="wrap">
+        <p id="title">Melhor nota da turma</p>
+        <p id="p-nome">
+            Digite o nome do Aluno:
+            <input type="text" name="nome" id="nome" placeholder="Digite o nome ">
+       </p>
+        <p>
+            Digite a nota:   
+            <input type="number" name="nota" id="nota" placeholder="Digite a nota" >
+        </p>
+        <p id="p-button">
+            <input type="button" value="Adicionar" id="adicionar" class="botao" onclick="add()" >
+            <input type="button" value="Resultado" id="resultado" class="botao" onclick="resu()">
+            <input type="button" value="Resetar" id="reset" class="botao" onclick="resetar()">
+        </p>
+    <p id="p-student"></p>
+    <p id="p-last"></p>
+    
+    </main>
+    <section id="s-two">
+        <p id="tt">Resultados</p>
+        <p id="res"></p>
+        <p id="maior"></p>
+        <p><input type="button" value="Voltar" id="return" class="botao" onclick="voltar()"></p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
