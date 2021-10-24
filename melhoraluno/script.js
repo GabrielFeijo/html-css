@@ -73,3 +73,32 @@ function voltar(){
     document.getElementById('wrap').style.display = `block`;
     document.getElementById('s-two').style.display = `none`;
 }
+
+document.onkeydown = teclado;
+
+function teclado(e){
+    if (e.keyCode == 13){
+        if (nome.value.length > 0 && nota.value.length >0){
+   
+     
+            res.innerHTML += `<p id='js-nome'>Nome: ${nome.value} <br>`;
+            res.innerHTML += `Nota: ${nota.value} </p>`;
+           s++
+           document.getElementById('wrap').style.height = `250px`
+           document.getElementById('wrap').style.marginTop = `-125px`
+           document.getElementById('p-student').innerHTML = `Alunos Cadastrados = ${s}`
+           document.getElementById('p-last').innerHTML = `Útimo Aluno(a) Cadastrado = ${nome.value}`
+         
+        }
+        if ( (nota.value<10? nota.value = '0' + nota.value: nota.value ) > melhorn){
+            melhorn = nota.value;  
+            melhornome = nome.value;
+        }
+        nota.value = ''
+        nome.value = ''  
+    }
+    if (e.keyCode == 27){
+        document.getElementById('wrap').style.display = `block`;
+        document.getElementById('s-two').style.display = `none`; 
+    }
+}

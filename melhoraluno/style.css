@@ -12,7 +12,7 @@ input{
     border-radius: 8px;
 }
 #wrap {
-    background-color: rgb(136, 100, 237);
+    background-color: rgba(136, 100, 237, 0.89);
     width: 400px;
     height: 200px;
     border-radius: 20px;
@@ -24,7 +24,7 @@ input{
     box-shadow: 0px 0px 2px 0px #00000040;
 }
 #s-two{
-    background-color: rgb(136, 100, 237);
+    background-color: rgba(136, 100, 237, 0.89);
     width: 400px;
     border-radius: 20px;
     position: absolute;
