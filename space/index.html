@@ -8,30 +8,51 @@
     <meta name="description" content="Agende sua viagem para dar uma volta pelo espaço">
     <meta name="keywords" content="Space, espaço, lua, viagem, foguete">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <title>Para o Espaço</title>
 </head>
-<body  >
+<body >
     <header>
         <nav class="menu" >
             <ul>
-                <li>Menu</li>
-                <li onclick="most()">Destinos
-                <ul id="m2" > 
-                    <li>Marte</li>
-                    <li>Júpiter</li>
-                    <li>Saturno</li>
-                    <li>Saturno</li>
-                    <li>Lua</li>
-                </ul></li>
-                <li>Tripulação</li>
-                <li>Tecnologia</li>
+                <li>Início</li>
+                <a href="pages/page02/index.html">
+                    <li onclick="most()">
+                    Destinos   </a>
+                    <ul id="m2" > 
+                        <li>Marte</li>
+                        <li>Júpiter</li>
+                        <li>Saturno</li>
+                    </ul>
+                </li>
+                <li onclick="see()">Tripulação 
+                     <ul id="m3" > 
+                        <li>Gabriel Feijó</li>
+                        <li>João Azevedo</li>
+                        <li>Luís Carlos</li>
+                        <li>Stefany Carla</li>
+                     </ul>
+                </li>
+                <li><a href="pages/page03/index.html">Tecnologia</a>
+                
+                </li>    
             </ul>
            
         </nav>
     </header>
-    <main onclick="fechar()">
-
-    </main>
+  <main onclick="fechar()">
+    <p id="title-1">
+        Então, se você desejar ir ao
+         <span>ESPAÇO</span>
+        <div>
+            Viajar para o espaço pode, em breve, se tornar uma atividade tão comum quanto pegar o carro e fazer um bate-volta para a praia — pelo menos para os mais ricos. 
+            Isso porque, atualmente, empresas como a SpaceX, a Virgin Galactic, e a BlueOrigin, pretendem transformar as viagens espaciais em voos comerciais.
+            O turismo espacial tem ganhado espaço nos últimos anos e a expectativa da consultoria Research and Markets é a de que o setor irá chegar a US$ 2,58 bilhões até 2031, com um crescimento previsto de 17,15% ao ano. 
+        </div>
+    </p>
+    <img src="image/astronauta.png" alt="Uma imagem de um astrounata em forma de desenho" id="astro">
+  </main>
+ 
     
 
     <script src="script.js"></script>

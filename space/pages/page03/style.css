@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Yanone+Kaffeesatz&display=swap');
 
 body{
     margin: 0;
@@ -11,14 +11,14 @@ body{
 	height: 50px;
 	margin-block-start: 0;
 }
-ul{
+ ul{
     margin-block-start: 0em;
 	padding-top:15px ;
 	position: absolute;
 	right: 0;
   
 }
-ul > li{
+ ul > li{
     display: inline;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-size: 1.3em;
@@ -71,6 +71,37 @@ p{
 	margin-block-start: 0;
 	margin-block-end: 0;
 }
+#choose{
+    font-family: 'Quicksand', sans-serif;
+	font-size: 2.0em;
+    font-weight: 300;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    width: 500px;
+}
+#one{
+    color: rgba(92, 92, 92, 0.767);
+
+}
+#name{
+    font-family: 'Quicksand', sans-serif;
+    width: 400px;
+    font-size: 1.8em;
+    position: relative;
+    top: 150px;
+	left: 180px;
+}
+#resume{
+    font-family: 'Quicksand', sans-serif;
+    width: 600px;
+ 
+    position: relative;
+    top: -50px;
+	left: 200px;
+    line-height: 30px;
+    color: rgb(179, 179, 179);
+}
 main{
 	background-image: url(https://img.freepik.com/vetores-gratis/fundo-do-ceu-noturno-com-estrelas_104785-147.jpg?size=626&ext=jpg);
 	background-repeat: no-repeat;
@@ -78,36 +109,52 @@ main{
 	width: 100%;
 	height: 92.4vh;
 }
-#title-1{
-	font-family: 'Quicksand', sans-serif;
-	width: 300px;
-	position: relative;
-	top: 200px;
-	left: 70px;
-	
-}
-span{
-	width: 300px;
-	font-size: 4.9em;
-	font-weight: 300;
-}
-div{
-	width: 500px;	
-	font-family: 'Quicksand', sans-serif;
-	position: relative;
-	top: 200px;
-	left: 70px;
-}
-#astro{
-	position: absolute;
-	top: 200px;
-	left: 60%;
-	width: 350px;
-}
+
+
 a{
 	text-decoration: none;
 	
 }
 a:visited, a:link{
 	color: white;
+}
+#ball{
+    position: relative;
+    top: 7px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgba(92, 92, 92, 0.767);
+    position: relative;
+    top: 200px;
+    left: 120px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-weight: 300;
+    
+}
+.circle:hover{
+    cursor: pointer;
+}
+.number-c{
+   position: relative;
+   top: 10px;
+}
+#foguete{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: -160px;
+    left:700px;
+    border-radius: 10px;
+}
+#circle1{
+    background-color: white;
+    color: rgb(18, 18, 19);
+    
+    font-weight: 700;
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Feijó">
+    <meta name="description" content="Agende sua viagem para dar uma volta pelo espaço">
+    <meta name="keywords" content="Space, espaço, lua, viagem, foguete">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../image/favicon.ico" type="image/x-icon">
+    <title>Para o Espaço</title>
+</head>
+<body >
+    <header>
+        <nav class="menu" >
+            <ul>
+                 
+                     <li><a href="../../index.html">Início</a></li>
+                
+                    <li onclick="most()">
+                        Destinos
+                    <ul id="m2" > 
+                        <li >Marte</li>
+                        <li >Júpiter</li>
+                        <li >Lua</li>
+                    </ul>
+                </li>
+                <li onclick="see()">Tripulação 
+                     <ul id="m3" > 
+                        <li>Gabriel Feijó</li>
+                        <li>João Azevedo</li>
+                        <li>Luís Carlos</li>
+                        <li>Stefany Carla</li>
+                     </ul>
+                </li>
+                <li><a href="../page03/index.html">Tecnologia</a>
+                
+                </li>    
+            </ul>
+           
+        </nav>
+    </header>
+  <main onclick="fechar()">
+    <p id="choose"><span id="one">01</span>  Escolha seu destino</p>
+
+    <img src="http://jovemastronomo.wikidot.com/local--files/marte/marte-planeta.gif" alt="" id="img-planet">
+    <ul id="sub-menu">
+        <li onclick="marte()" id="planet-1">Marte</li>
+        <li onclick="jupiter()" id="planet-2">Júpiter</li>
+        <li onclick="lua()" id="planet-3">Lua</li>
+    </ul>
+    <p id="name">MARTE</p>
+    <p id="resume">Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem ao deus romano da guerra, muitas vezes é descrito como o "Planeta Vermelho", porque o óxido de ferro predominante em sua superfície lhe dá uma aparência avermelhada.
+    A temperatura varia desde -125 graus Celsius no inverno Marciano até 22 graus Celsius no verão Marciano. A atmosfera Marciana é composta de mais de 95% de dióxido de carbono.
+    </p>
+
+  </main>
+ 
+    
+
+    <script src="../../script.js"></script>
+</body>
+</html>
