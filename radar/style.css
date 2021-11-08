@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+@keyframes carro {
+    100%{
+        transform: translateX(100vw) rotateY(180deg);
+          
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+   
+    overflow: hidden; 
+}
+#out-s{
+    background-color: black;
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.ball{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+#b-1{
+    margin-left: 50px;
+}
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    text-align: center;
+    margin-left: 40px;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ff3b09;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+#res{
+    font-weight: 700;
+}
+#car{
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    transform: rotateY(180deg);
+    animation-name: carro;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+    
+}
