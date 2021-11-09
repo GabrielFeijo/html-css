@@ -31,19 +31,19 @@ slider.oninput = function() {
 }
 function velocidade(){
   if (range.value >= 0 && range.value <= 10){
-    car.style.animationDuration = '10s';
-  }else if (range.value > 10 && range.value <= 30){
     car.style.animationDuration = '8s';
-  }else if (range.value > 30 && range.value <= 60){
+  }else if (range.value > 10 && range.value <= 30){
     car.style.animationDuration = '7s';
-  }else if (range.value > 60 && range.value <= 90){
+  }else if (range.value > 30 && range.value <= 60){
     car.style.animationDuration = '6s';
-  }else if (range.value > 90 && range.value <= 120){
+  }else if (range.value > 60 && range.value <= 90){
     car.style.animationDuration = '5s';
-  }else if (range.value > 120 && range.value <= 150){
+  }else if (range.value > 90 && range.value <= 120){
     car.style.animationDuration = '4s';
-  }else if (range.value > 150 && range.value <= 170){
+  }else if (range.value > 120 && range.value <= 150){
     car.style.animationDuration = '3s';
+  }else if (range.value > 150 && range.value <= 170){
+    car.style.animationDuration = '2s';
   }
 }
 setInterval(velocidade, 100);
