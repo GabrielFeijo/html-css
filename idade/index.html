@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculador Idade</title>
+</head>
+<body>
+
+    <main>
+        <section id="wrap">
+        <h1 id="title_age">Verificador de Idades</h1>
+          <p>Digite seu nome: <input type="text" name="nome" id="name" placeholder="Nome" class="entrada" autofocus> </p>
+          <p>Digite sua idade: <input type="number" name="idade" id="idade" min="1" max="130" placeholder="Idade" class="entrada"> </p>
+          <p id="cont_idade">Pessoas Cadastradas: 0</p>
+          <input type="button" value="Adicionar" onclick="add()" class="button" id="add">
+          <input type="button" value="Resultados" class="button" id="result" onclick="results()" disabled>
+         
+      </section>
+      <section id="final">
+          <h1 id="title_res">Resultados Obtidos</h1>
+          <section id="res" class="loca-r"></section>
+          <section id="idades" class="loca-r"></section>
+          <section id="age_b" class="loca-r"></section>
+          <section id="age_d" class="loca-r"></section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
