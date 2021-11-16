@@ -18,6 +18,9 @@ p{
     color: rgba(0, 0, 0, 0.616);
     text-align: center;
 }
+#title_res{
+    color: white;
+}
 input{
     outline: 0;
    
@@ -66,6 +69,7 @@ input{
 }
 #final{
     display: none;
+    text-align: center;
 }
 #title_res{
     margin-block-start: 1em;
@@ -83,7 +87,7 @@ input{
     padding:10px ;
  
 }
-#res > p, #idades > p, #age_b > p{
+#res > p, #idades > p, #age_b > p, #age_d > p, #names > p{
     margin-block-start: 0;
     margin-block-end: 2px;
     
@@ -91,7 +95,14 @@ input{
 #res > p, #idades > p{
     text-align: center;
 }
-#age_b {
-
+#age_b,#age_d {
+    text-align:left ;
     color: rgba(0, 0, 0, 0.575);
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);   
 }
