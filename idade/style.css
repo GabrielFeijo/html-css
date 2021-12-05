@@ -35,8 +35,7 @@ input{
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -121.25px;
-    margin-left: -195px;
+ transform: translate(-50%,-50%);
 }
 .button{
     padding: 12px;

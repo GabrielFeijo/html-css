@@ -9,7 +9,7 @@
     margin: 0;
 }
 html, body{
-    min-width: 100vh;
+    min-height: 100vh;
 }
 #head{
   
@@ -48,12 +48,10 @@ a:hover{
     padding-left: 30px;
     font-family: 'Sriracha', cursive;
     line-height: 2.0em;
-    padding-bottom: 2em;
+    padding-bottom: 10vh;
 }
 
-section > p {
-    padding-bottom: 2em;
-}
+
 #img-1{
     background-image: url('imagens/background001.jpg');
     background-size: cover;

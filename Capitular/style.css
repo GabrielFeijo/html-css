@@ -31,6 +31,8 @@ h1{
 }
 #res{
     padding-top: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #sec{
     width: 300px;
