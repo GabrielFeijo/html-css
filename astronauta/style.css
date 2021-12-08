@@ -1,0 +1,28 @@
+@keyframes astro {
+    50%{
+        transform: scale(0.5);
+ 
+    }
+}
+
+
+
+body{
+    background-image: url('imagens/espaco.jpg');
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh ;
+    overflow: hidden;
+}
+#astro{
+    background-image: url('imagens/astronauta.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    animation-name: astro;
+    animation-duration: 15s;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
