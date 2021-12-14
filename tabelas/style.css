@@ -1,0 +1,14 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+td{
+    border: 1px solid black;
+ 
+    padding: 8px;
+ 
+
+}
+table{
+    width: 400px;
+    border-collapse: collapse; /*Juntar as bordas*/
+}
