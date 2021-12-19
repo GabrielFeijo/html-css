@@ -10,5 +10,10 @@ td{
 }
 table{
     width: 400px;
-    border-collapse: collapse; /*Juntar as bordas*/
+    border-collapse: collapse; /*Juntar as bordas
+    
+
+    text-align:center;
+    vertical-align:middle;
+    */
 }
