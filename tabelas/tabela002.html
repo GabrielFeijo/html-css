@@ -8,24 +8,58 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-          
+          margin: 0;
+          padding: 0;
         }
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+            margin: 10px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }  
+        tbody > tr:nth-child(odd){ /*2n-1 | impar*/
+            background-color: rgb(255, 255, 255);
         }
+        tbody > tr:nth-child(even){/*2n | par*/
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+      
         thead, tfoot{
             background-color: gray;
             color: white;
         }
+        p:nth-child(odd){
+           
+            background-color: lightgray;
+           padding: 20px;
+        }
+        p{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         padding: 0 20px;
+        }
+    
         .num{
             text-align: right;
         }
         .porce{
+            text-align: center;
+        }
+        #total{
             text-align: center;
         }
     </style>
@@ -34,20 +68,22 @@
     <!--
         Anatomia da tabelas maiores
         TABLE
-            THEAD
-                TR,TD,TH
-            TBODY
-                TR,TD,TH
-            TFOOT
-                TR,TD,TH
+           CAPTION --legenda
+                THEAD --cabeça
+                    TR,TD,TH
+                TBODY --corpo
+                    TR,TD,TH
+                TFOOT --pe
+                    TR,TD,TH
     -->
 
     <table>
+        <caption>População da Unidades Federativas </caption>
         <thead>
             <tr>
-                <th>Estados</th>
-                <th>População</th>
-                <th>% da pop. total</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+                <th scope="col">% da pop. total</th>
             </tr>
         </thead>
         <tbody>
@@ -191,13 +227,56 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>213.317.639</strong></td>
-                <td class="porce">100%</td>
+                <th scope="row">Total de Habitantes</th>
+                <td  id="total" colspan="2"><strong>213.317.639</strong></td>
+                
             </tr>
 
         </tfoot>
     </table>
+
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio a quod aliquid nihil non corrupti unde quidem laudantium voluptas perspiciatis, ex officiis explicabo qui eveniet soluta dignissimos quibusdam, accusantium possimus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla saepe ea sed culpa, quis enim harum ratione corporis. Soluta fugit voluptatibus ad natus non at adipisci reprehenderit beatae? Odio, voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestias odit beatae fugit tempore! Corrupti maiores magni incidunt mollitia nobis quisquam minus sunt laborum atque delectus itaque, ratione recusandae repellendus!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab provident sint porro deserunt? Quidem hic ipsam omnis voluptatibus autem neque voluptas quod minima nostrum quam pariatur, numquam eos. Unde, magnam!
+    </p>
     
 </body>
 </html>
