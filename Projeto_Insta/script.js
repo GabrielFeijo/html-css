@@ -9,10 +9,11 @@
  }
  
  
-let phone = document.getElementById('phone')
-let num = 2
+
 
 function Background(){
+    var phone = document.getElementById('phone')
+    var num = 2
     phone.style.backgroundImage = `url(img/Fundo${num}.png)`;
     num++
 
