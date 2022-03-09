@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c675e640d4.js" crossorigin="anonymous"></script>
+    <title>Cria Edu</title>
+</head>
+<body>
+    <div class="wrap ">
+        <img src="images/LOGO CRIAEDU.png" alt="Logo" class="main-img">
+        <p id="main-text">Acesse já:</p>
+
+        <input type="email" class="email" id="mail" placeholder="Email">
+        <input type="password"  id="pass" placeholder="Senha">
+        <p id="pass-text" onclick="recoverPass()">Esqueceu a senha?</p>
+        <input type="button" value="Entrar" id="button-enter" onclick="redirecionar()">
+    </div>
+    
+    <div id="r-pass">
+        <img src="images/LOGO CRIAEDU.png" alt="Logo" class="main-img">
+    
+        <p id="rpass-text">Confirme seu email:</p>
+        <input type="email" class="email" id="r-mail" placeholder="Email">
+        <p id="error-mail"></p>
+        <div id="recovery-button">
+            <input type="button" value="Enviar" id="button-envio" onclick="sendmail()">
+                <i class="fa-solid fa-arrow-left-long" id="arrow" onclick="home()"></i>
+        </div>
+       
+
+    </div>
+    
+    <div id="sucess">
+    
+        <img src="images/Verified-Badge.png" alt="Verificado Azul" id="badge-verified">
+    
+        <p id="submit-text">E-mail de redefinição de senha enviado</p>
+        <p id="submit-secondary">Um e-mail foi enviado para seu endereço de e-mail de recuperação <span id="cl-mail">xxxx@xxxx.com</span>. Siga as instruções para redefinir sua senha</p>
+       <input type="button" value="OK" id="submit-bt" onclick="home()">
+            
+
+    </div>
+    
+ 
+    
+
+    <script src="main.js"></script>
+
+</body>
+</html>
